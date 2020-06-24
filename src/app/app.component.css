@@ -1,0 +1,18 @@
+.invisible{
+    visibility: hidden;
+}
+.weak{
+    width: "20%";
+    color:red;
+    background:red;
+}
+.medium{
+    width: "50%";
+    color:yellow;
+    background:yellow;
+}
+.strong{
+    width: "90%";
+    color:green;
+    background: green;
+}

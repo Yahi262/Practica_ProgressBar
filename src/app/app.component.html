@@ -1,0 +1,14 @@
+<div>
+    <h1>
+        Componente app.component.html
+    </h1>
+</div>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--aqui va el nombre de la etiqueta del ts-->
+<saludar-app #Cvar [nombre]="name" (saludar)="onSaludar($event)"></saludar-app>
+    <div>
+        <span [ngClass]="validar(Cvar.nombreLista)">{{Cvar.nombreLista}}</span>
+        
+        <!--Escribiendo: <strong>{{Cvar.nombreLista}}</strong> 
+            aqui accedemos a lo que contiene el componente-->
+    </div>

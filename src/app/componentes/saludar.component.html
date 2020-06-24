@@ -1,0 +1,14 @@
+<h1>Saludados, favor de ingresar su Usuario:</h1>
+<div *ngIf="nombres.length<5">
+    <input type="text" [(ngModel)]="nombreLista">
+    <br>
+    <button (click)="onButtonClick()">Añadir nombre</button>
+</div>
+
+<p *ngFor="let item of nombres; index as i">
+    <!--(click)="onClick()" se sutituyo por el for, debido a que necesitamos 
+    que recorra e imprima el orden y la variable i es el index-->
+    
+    Id: {{i}} 你好 {{item}} ..!!!!! <!--la interpolacion es la concatenacion-->
+</p>
+
